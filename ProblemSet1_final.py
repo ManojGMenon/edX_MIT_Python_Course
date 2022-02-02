@@ -1,13 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Problem Set 1  :  These are the scripts for Unit 1
+
+edX MIT Python course assignments
+
+Problem Set 1  :  These are the scripts for Unit 1 assignments
 
 solutions by Manoj Menon 
 31st Jan 2022
 
-"""
+-----------------------------------------
+  
+Problem # 1 
 
-""" Problem # 1 """
+Assume s is a string of lower case characters.
+Write a program that counts up the number of vowels contained in the string s. 
+Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. For example, if s = 'azcbobobegghakl', your program should print:
+Number of vowels: 5
+
+
+Solution for #1 """
 
 # s= input('Enter a series of text characters in small case without gaps : ')
 # s= 'ebobby'
@@ -19,8 +30,16 @@ for char in s:
 print("Number of vowels: " + str(Numofvowels))
 
 
+"""-------------------------------------------------
 
-"""   Problem # 2  """
+Problem # 2  
+
+Assume s is a string of lower case characters.
+Write a program that prints the number of times the string 'bob' occurs in s. For example, if s = 'azcbobobegghakl', then your program should print
+Number of times bob occurs is: 2
+
+
+Solution for #2  """
 
 # s = input('Enter a series of text characters in small case without gaps : ')
 # s = 'ebobby'
@@ -36,8 +55,20 @@ for pos in range((inputtextlength-2)):
 print("Number of times bob occurs is: " + str(Numofbobs))
 
 
+"""-----------------------------------------------
 
-"""   Problem # 3  """
+Problem # 3  
+
+Assume s is a string of lower case characters.
+Write a program that prints the longest substring of s in which the letters occur in alphabetical order. 
+For example, if s = 'azcbobobegghakl', then your program should print
+Longest substring in alphabetical order is: beggh
+In the case of ties, print the first substring. 
+For example, if s = 'abcbcd', then your program should print
+Longest substring in alphabetical order is: abc
+
+
+Solution for  #3  """
 
 # -----Logic for the code------
 # 
@@ -46,8 +77,6 @@ print("Number of times bob occurs is: " + str(Numofbobs))
 #       If it is, concatenate it to the longeststring variable
 #       If it is not then store that longeststring as well as its length for next iteration, break out of that loop
 #        and restart the check from the next char
-
-
 
 # s = input('Enter a series of text characters without gaps : ')
 # s = 'abcdefghijklmnopqrstuvwxyz'
@@ -68,5 +97,4 @@ for pos in range(inputtextlength-1):
     if len(newlongeststring) > len(finallongeststring):
         finallongeststring = newlongeststring 
 print('Longest substring in alphabetical order is: ', finallongeststring)
-        
-        
+              
